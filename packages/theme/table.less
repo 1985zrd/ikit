@@ -1,0 +1,60 @@
+.ik-table--stripe {
+  tbody > tr:nth-child(even) > td {
+    background: #e7ebf0;
+  }
+}
+.ik-table--large {
+  .ant-table {
+    thead > tr > th {
+      font-size: 20px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    tbody > tr > td {
+      font-size: 18px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
+  }
+}
+.ant-table-thead > tr > th .anticon-filter,
+.ant-table-thead > tr > th .ant-table-filter-icon {
+  color: @text-color;
+}
+.ant-table-thead > tr > th .ant-table-column-sorter {
+  color: @text-color;
+}
+.ant-table-selection .anticon-down {
+  color: #000;
+}
+.ant-table-bordered .ant-table-thead > tr > th:not(:last-child) {
+  border-right: 1px solid #fff;
+}
+
+.ant-table-thead
+  > tr
+  > th.ant-table-column-has-actions.ant-table-column-has-sorters:hover {
+  color: @text-color;
+}
+.ant-table-thead
+  > tr
+  > th.ant-table-column-has-actions.ant-table-column-has-filters:hover
+  .anticon-filter:hover,
+.ant-table-thead
+  > tr
+  > th.ant-table-column-has-actions.ant-table-column-has-filters:hover
+  .ant-table-filter-icon:hover {
+  color: @text-color;
+}
+.ant-table-thead > tr > th.ant-table-column-sort {
+  background: #d1dae6 !important;
+}
+
+.ant-table-bordered .ant-table-thead > tr:not(:last-child) > th,
+.ant-table-bordered .ant-table-thead > tr > th,
+.ant-table-bordered .ant-table-header > table,
+.ant-table-bordered .ant-table-body > table,
+.ant-table-bordered .ant-table-fixed-left table,
+.ant-table-bordered .ant-table-fixed-right table {
+  border-color: @white!important;
+}

@@ -1,0 +1,75 @@
+<template>
+  <codeBox :title="title"
+           :description="description"
+           :code="canCheck">
+    <ik-tree-select style="width: 300px"
+                   :treeData="treeData"
+                   :value="value"
+                   @change="onChange"
+                   treeCheckable
+                   :showCheckedStrategy="SHOW_PARENT"
+                   searchPlaceholder="Please select" />
+  </codeBox>
+</template>
+
+<script>
+import { TreeSelect } from '~/index'
+import { canCheck } from '../codeExample'
+const SHOW_PARENT = TreeSelect.SHOW_PARENT
+
+const treeData = [
+  {
+    title: 'Node1',
+    value: '0-0',
+    key: '0-0',
+    children: [
+      {
+        title: 'Child Node1',
+        value: '0-0-0',
+        key: '0-0-0'
+      }
+    ]
+  },
+  {
+    title: 'Node2',
+    value: '0-1',
+    key: '0-1',
+    children: [
+      {
+        title: 'Child Node3',
+        value: '0-1-0',
+        key: '0-1-0',
+        disabled: true
+      },
+      {
+        title: 'Child Node4',
+        value: '0-1-1',
+        key: '0-1-1'
+      },
+      {
+        title: 'Child Node5',
+        value: '0-1-2',
+        key: '0-1-2'
+      }
+    ]
+  }
+]
+export default {
+  data () {
+    return {
+      title: '可勾选',
+      description: '使用勾选框实现多选功能。',
+      canCheck,
+      value: ['0-0-0'],
+      treeData,
+      SHOW_PARENT
+    }
+  },
+  methods: {
+    onChange (value) {
+      console.log('onChange ', value)
+      this.value = value
+    }
+  }
+}
+</script>

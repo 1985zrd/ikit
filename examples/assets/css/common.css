@@ -1,0 +1,15 @@
+.demo-item{
+  width: 1321px;
+  padding: 20px 0px 20px 0px;
+}
+.demo-item h4{
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.demo-item p{
+  margin-left: 15px;
+}
+.demo-item .ant-btn{
+  margin-right: 8px;
+  margin-bottom: 12px;
+}

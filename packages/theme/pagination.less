@@ -1,0 +1,23 @@
+.ant-pagination-item:not(.ant-pagination-item-active) {
+    border: 1px solid @grey-5;
+    &:hover, &:focus {
+        border-color: @A4;
+        background-color: @A4;
+        a {
+            color: @A3;
+        }
+    }
+}
+.ant-pagination-item.ant-pagination-item-active {
+    background-color: @A85;
+    border-color: @A85;
+    a {
+        color: @white;
+    }
+}
+// 上一页下一页和下拉选择条数
+.ant-pagination-next .ant-pagination-item-link,
+.ant-pagination-prev .ant-pagination-item-link,
+.ant-select-selection {
+    border: 1px solid @grey-5;
+}

@@ -1,0 +1,41 @@
+.ant-collapse {
+  border-radius: 0;
+  border: none;
+  .ant-collapse-content {
+    color: @grey-1;
+    border-top: 0;
+  }
+  .ant-collapse-item {
+    border-bottom: 0;
+    border-radius: 0;
+    .ant-collapse-header {
+      color: @black;
+      font-size: 16px;
+      .ant-collapse-arrow {
+        left: 14px;
+        font-size: 10px;
+      }
+    }
+  }
+  .ant-collapse-item-disabled > .ant-collapse-header {
+    color: @disabled-color;
+    background: @disabled-bg;
+  }
+}
+
+.ant-collapse-borderless {
+  .ant-collapse-item {
+    border-bottom: 1px solid @grey-7;
+    &:last-child {
+      border: none;
+    }
+  }
+}
+
+.ant-collapse.iconRight .ant-collapse-item .ant-collapse-header {
+  padding: 9px 32px 9px 14px;
+  .anticon {
+    left: initial;
+    right: 14px;
+  }
+}

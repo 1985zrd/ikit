@@ -1,0 +1,83 @@
+@uploadClass: ant-upload;
+.@{uploadClass} {
+  color: @upload-font-color;
+  transition: all 0.3s @ease-base-out;
+  &:hover {
+    color: @upload-font-color-hover;
+  }
+  &-list {
+    &-item {
+      &-info {
+        transition: all 0.3s;
+        &:hover {
+          color: @grey-1;
+        }
+      }
+    }
+  }
+  
+  &-drag {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.@{uploadClass}.@{uploadClass}-select {
+  &-picture-card {
+    width: @upload-picture-card-size;
+    height: @upload-picture-card-size;
+    border: @upload-picture-card-border;
+    background-color: @white;
+    transition: all 0.3s @ease-base-out;
+    i {
+      font-size: 22px;
+      color: @upload-select-picture-card-icon-color;
+    }
+    .@{uploadClass}-text {
+      display: none;
+    }
+    &:hover {
+      background-color: @upload-picture-card-background-hover;
+    }
+    &.@{uploadClass}-disabled {
+      border: @upload-disabled-border;
+      background-color: @upload-disable-bg;
+      &:hover {
+        background-color: @upload-disable-bg;
+        color: @upload-disable-color;
+      }
+      i {
+        color: @upload-select-picture-card-icon-color-disabled;
+      }
+    }
+  }
+  &-text {
+    .ant-btn {
+      padding: 0 15px;
+    }
+    &.@{uploadClass}-disabled {
+      .ant-btn {
+        background-color: @grey-8;
+        color: @grey-4;
+        border-color: @grey-5;
+      }
+    }
+  }
+}
+
+.@{uploadClass}-disabled {
+  color: @upload-disable-color;
+  cursor: no-drop;
+  &.@{uploadClass}:hover {
+    color: @upload-disable-color;
+  }
+}
+
+.@{uploadClass}-list-item.@{uploadClass}-list-item-done,
+.@{uploadClass}-list-item.@{uploadClass}-list-item-error {
+  .@{uploadClass}-list-item-info {
+    &:hover {
+      background-color: @grey-11;
+    }
+  }
+}

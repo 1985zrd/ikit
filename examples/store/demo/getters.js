@@ -1,0 +1,5 @@
+export default {
+  theme: state => state.theme,
+  themeColor: state => state.themeColor,
+  defaultThemeColor: state => state.defaultThemeColor
+}

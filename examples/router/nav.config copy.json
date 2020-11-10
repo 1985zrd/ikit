@@ -1,0 +1,573 @@
+{
+  "开发指南": [
+    {
+      "type": "doc",
+      "name": "guide",
+      "path": "/guide",
+      "meta": {
+        "title": "介绍"
+      }
+    },
+    {
+      "type": "doc",
+      "name": "start",
+      "path": "/start",
+      "meta": {
+        "title": "快速开始"
+      }
+    }
+  ],
+  "组件": [
+    {
+      "desc": "General",
+      "path": "/General",
+      "meta": {
+        "title": "General"
+      },
+      "items": [
+        {
+          "type": "page",
+          "name": "button",
+          "path": "/button",
+          "meta": {
+            "title": "Button 按钮",
+            "desc": "按钮用于开始一个即时操作。"
+          }
+        },
+        {
+          "type": "page",
+          "name": "icon",
+          "path": "/icon",
+          "meta": {
+            "title": "Icon 按钮",
+            "desc": "语义化的矢量图形。"
+          }
+        }
+      ]
+    },
+    {
+      "desc": "Layout",
+      "path": "/layout-all",
+      "meta": {
+        "title": "Layout"
+      },
+      "items": [
+        {
+          "type": "page",
+          "name": "grid",
+          "meta": {
+            "title": "Grid 栅格",
+            "desc": "24 栅格系统。"
+          },
+          "path": "/grid"
+        },
+        {
+          "type": "page",
+          "name": "layout",
+          "meta": {
+            "title": "Layout 布局",
+            "desc": "协助进行页面级整体布局。"
+          },
+          "path": "/layout"
+        }
+      ]
+    },
+    {
+      "desc": "Navigation",
+      "path": "/davigation",
+      "meta": {
+        "title": "Navigation"
+      },
+      "items": [
+        {
+          "type": "page",
+          "meta": {
+            "title": "Breadcrumb 面包屑",
+            "desc": "显示当前页面在系统层级结构中的位置，并能向上返回。"
+          },
+          "name": "breadcrumb",
+          "path": "/breadcrumb"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Menu 导航菜单",
+            "desc": "为页面和功能提供导航的菜单列表。"
+          },
+          "name": "menu",
+          "path": "/menu"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Pagination 分页",
+            "desc": "采用分页的形式分隔长列表，每次只加载一个页面。"
+          },
+          "name": "pagination",
+          "path": "/pagination"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Affix 固钉",
+            "desc": "Affix  固钉"
+          },
+          "name": "affix",
+          "path": "/affix"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Steps 步骤条",
+            "desc": "Steps 步骤条"
+          },
+          "name": "steps",
+          "path": "/steps"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Dropdown 下拉菜单",
+            "desc": "向下弹出的列表。"
+          },
+          "name": "dropdown",
+          "path": "/dropdown"
+        }
+      ]
+    },
+    {
+      "desc": "DataEntry",
+      "path": "/dataEntry",
+      "meta": {
+        "title": "DataEntry"
+      },
+      "items": [
+        {
+          "type": "page",
+          "meta": {
+            "title": "AutoComplete 自动完成",
+            "desc": "输入框自动完成功能。"
+          },
+          "name": "autoComplete",
+          "path": "/auto-complete"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Cascader 级联选择",
+            "desc": "级联选择框。"
+          },
+          "name": "cascader",
+          "path": "/cascader"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Checkbox 多选框",
+            "desc": "多选框"
+          },
+          "name": "checkbox",
+          "path": "/checkbox"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "DatePicker 日期选择",
+            "desc": "输入或选择日期的控件。"
+          },
+          "name": "datePicker",
+          "path": "/date-picker"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Form 表单",
+            "desc": "具有数据收集、校验和提交功能的表单，包含复选框、单选框、输入框、下拉选择框等元素。"
+          },
+          "name": "form",
+          "path": "/form"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Input 输入框",
+            "desc": "通过鼠标或键盘输入内容，是最基础的表单域的包装。"
+          },
+          "name": "input",
+          "path": "/input"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "InputNumber 数字输入框",
+            "desc": "通过鼠标或键盘，输入范围内的数值。"
+          },
+          "name": "inputNumber",
+          "path": "/input-number"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Radio 单选框",
+            "desc": "单选框。"
+          },
+          "name": "radio",
+          "path": "/radio"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Select 选择器",
+            "desc": "下拉选择器。"
+          },
+          "name": "select",
+          "path": "/select"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Upload 上传",
+            "desc": "上传是将信息（网页、文字、图片、视频等）通过网页或者上传工具发布到远程服务器上的过程。"
+          },
+          "name": "upload",
+          "path": "/upload"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Switch 开关",
+            "desc": "Switch 开关选择器。"
+          },
+          "name": "switch",
+          "path": "/switch"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "TreeSelect",
+            "desc": "TreeSelect"
+          },
+          "name": "treeSelect",
+          "path": "/tree-select"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Rate",
+            "desc": "Rate"
+          },
+          "name": "rate",
+          "path": "/rate"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Transfer",
+            "desc": "Transfer"
+          },
+          "name": "transfer",
+          "path": "/transfer"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "TimePicker 时间选择框",
+            "desc": "输入或选择时间的控件。"
+          },
+          "name": "timePicker",
+          "path": "/time-picker"
+        }
+      ]
+    },
+    {
+      "desc": "DataDisplay",
+      "path": "/dataDisplay",
+      "meta": {
+        "title": "DataDisplay"
+      },
+      "items": [
+        {
+          "type": "page",
+          "meta": {
+            "title": "Card 卡片",
+            "desc": "通用卡片容器"
+          },
+          "name": "card",
+          "path": "/card"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Collapse折叠面板",
+            "desc": "可以折叠/展开的内容区域。"
+          },
+          "name": "collapse",
+          "path": "/collapse"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Empty 空状态",
+            "desc": "空状态时的展示占位图。"
+          },
+          "name": "empty",
+          "path": "/empty"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "List 列表",
+            "desc": "通用列表。"
+          },
+          "name": "list",
+          "path": "/list"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Table 表格",
+            "desc": "展示行列数据。"
+          },
+          "name": "table",
+          "path": "/table"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Tabs 标签页",
+            "desc": "选项卡切换组件。"
+          },
+          "name": "tabs",
+          "path": "/tabs"
+        },
+        {
+          "type": "page",
+          "path": "/calendar",
+          "name": "calendar",
+          "meta": {
+            "title": "Calendar 日历",
+            "desc": "按照日历形式展示数据的容器。"
+          }
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Tree 树形菜单",
+            "desc": "Tree"
+          },
+          "name": "tree",
+          "path": "/tree"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Popover",
+            "desc": "Popover"
+          },
+          "name": "popover",
+          "path": "/popover"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Statistic",
+            "desc": "Statistic"
+          },
+          "name": "statistic",
+          "path": "/statistic"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Comment",
+            "desc": "Comment"
+          },
+          "name": "comment",
+          "path": "/comment"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Timeline 时间轴",
+            "desc": "Timeline 时间轴"
+          },
+          "name": "timeline",
+          "path": "/timeline"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Tag 标签",
+            "desc": "Tag 标签"
+          },
+          "name": "tag",
+          "path": "/tag"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Avatar 头像",
+            "desc": "用来代表用户或事物，支持图片、图标或字符展示。"
+          },
+          "name": "avatar",
+          "path": "/avatar"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Badge 徽标数",
+            "desc": "图标右上角的圆形徽标数字。"
+          },
+          "name": "badge",
+          "path": "/badge"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Tooltip 文字提示",
+            "desc": "简单的文字提示气泡框。"
+          },
+          "name": "tooltip",
+          "path": "/tooltip"
+        }
+      ]
+    },
+    {
+      "desc": "Feedback",
+      "path": "/feedback",
+      "meta": {
+        "title": "Feedback"
+      },
+      "items": [
+        {
+          "type": "page",
+          "meta": {
+            "title": "Alert 警告提示",
+            "desc": "警告提示，展现需要关注的信息。"
+          },
+          "name": "alert",
+          "path": "/alert"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Message 全局提示",
+            "desc": "全局展示操作反馈信息。"
+          },
+          "name": "message",
+          "path": "/message"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Modal 对话框",
+            "desc": "模态对话框。"
+          },
+          "name": "modal",
+          "path": "/modal"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Skeleton 骨架屏",
+            "desc": "在需要等待加载内容的位置提供一个占位图。"
+          },
+          "name": "skeleton",
+          "path": "/skeleton",
+          "title": "Spin 加载中",
+          "desc": "用于页面和区块的加载中状态。"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Popconfirm",
+            "desc": "Popconfirm"
+          },
+          "name": "popconfirm",
+          "path": "/popconfirm"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Drawer",
+            "desc": "Drawer"
+          },
+          "name": "drawer",
+          "path": "/drawer"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Progress",
+            "desc": "Progress"
+          },
+          "name": "progress",
+          "path": "/progress"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Notification",
+            "desc": "Notification"
+          },
+          "name": "notification",
+          "path": "/notification"
+        }
+      ]
+    },
+    {
+      "desc": "Other",
+      "path": "/other",
+      "meta": {
+        "title": "Other"
+      },
+      "items": [
+        {
+          "type": "page",
+          "meta": {
+            "title": "ConfigProvider 全局化配置",
+            "desc": "为组件提供统一的全局化配置。"
+          },
+          "name": "configProvider",
+          "path": "/config-provider"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "LocaleProvider 国际化",
+            "desc": "为组件内建文案提供统一的国际化支持。"
+          },
+          "name": "localeProvider",
+          "path": "/locale-provider"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Anchor",
+            "desc": "Anchor"
+          },
+          "name": "anchor",
+          "path": "/anchor"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "BackTop 回到顶部",
+            "desc": "返回页面顶部的操作按钮。"
+          },
+          "name": "backTop",
+          "path": "/back-top"
+        },
+        {
+          "type": "page",
+          "meta": {
+            "title": "Divider 分割线",
+            "desc": "区隔内容的分割线"
+          },
+          "name": "divider",
+          "path": "/divider"
+        }
+      ]
+    }
+  ]
+}

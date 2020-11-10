@@ -1,0 +1,121 @@
+@import "./common/var.less";
+
+.ant-btn {
+  vertical-align: middle;
+  box-shadow: none;
+  &:after {
+    border: none !important;
+  }
+}
+
+.ant-btn-vertical {
+  height: auto;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 16px;
+  span {
+    display: block;
+    margin: 0 !important;
+  }
+}
+.ant-btn-vertical.ant-btn-sm {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 14px;
+}
+.ant-btn-vertical.ant-btn-lg {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  font-size: 16px;
+}
+.ant-btn-noBorder {
+  border: 0;
+  box-shadow: none;
+}
+.ant-btn-noHover {
+  color: #000 !important;
+  background: none !important;
+  border-color: #aeaeae !important;
+  &:hover,
+  &:focus {
+    background: none !important;
+    color: #000 !important;
+    border-color: #aeaeae !important;
+  }
+  &:after {
+    border: none !important;
+  }
+}
+.ant-btn-link {
+  color: #1890ffff !important;
+  border: none;
+  border-color: #1890ffff !important;
+  &:hover {
+    color: #69c0ffff !important;
+    border-color: #69c0ffff !important;
+  }
+  &:active {
+    color: #096dd9ff !important;
+    border-color: #096dd9ff !important;
+  }
+}
+.ant-btn[disabled] {
+  color: #c7c7c7 !important;
+  border-color: #dedede !important;
+}
+
+.ant-btn-danger {
+  border: none !important;
+  color: #fff !important;
+  background-color: @button-danget-color!important;
+}
+
+.ant-btn-danger[disabled] {
+  background-color: @button-danget-color;
+  color: #fff !important;
+}
+
+.ant-btn-danger:hover,
+.ant-btn-danger.hover {
+  color: #fff !important;
+  background-color: @button-danget-hover-color!important;
+}
+.ant-btn-danger:active,
+.ant-btn-danger.active {
+  color: #fff !important;
+  background-color: @button-danget-active-color!important;
+}
+.ant-btn-primary:not(.ant-btn-background-ghost) {
+  border: none;
+}
+.ant-btn-primary:not([disabled]):hover {
+  background-color: @primary-1!important;
+}
+.ant-btn-primary:not([disabled]):active {
+  background-color: @orange-color!important;
+}
+.ant-btn-primary:active,
+.ant-btn-primary.active {
+  color: #fff;
+  background-color: @progress-default-color;
+  border-color: @progress-default-color;
+}
+.ant-btn:not(.ant-btn-danger):not(.ant-btn-primary):not(.ant-btn-link):active,
+.ant-btn:not(.ant-btn-danger):not(.ant-btn-primary):not(.ant-btn-link).active {
+  color: @progress-default-color;
+  border-color: @progress-default-color;
+}
+
+.ant-btn-round {
+  font-size: 14px;
+  &.ant-btn-lg {
+    font-size: 16px;
+  }
+}
+.ant-btn-circle,
+.ant-btn-circle-outline {
+  font-size: 14px;
+  &.ant-btn-lg {
+    font-size: 16px;
+  }
+}

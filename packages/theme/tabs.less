@@ -1,0 +1,100 @@
+.ant-tabs {
+  &-nav &-tab-active {
+    font-size: 18px;
+    color: @text-color
+  }
+
+  &-nav &-tab {
+    color: @grey-1;
+  }
+
+  &-nav &-tab-disabled {
+    color: @disabled-color;
+  }
+
+  &-tab-arrow-show{
+    color: @text-color;
+    &.ant-tabs-tab-btn-disabled{
+      color: @disabled-color;
+    }
+  }
+
+  &-bar &-tab,
+  &-default-bar &-tab {
+    padding: @tabs-title-padding-base 0 !important;
+    // color: @grey-1;
+  }
+
+  &-small-bar &-tab {
+    padding: @tabs-title-padding-sm 0 !important;
+  }
+
+  &-large-bar &-tab {
+    padding: @tabs-title-padding-lg 0 !important;
+  }
+
+  &-card-bar &-tab {
+    padding: 0 @tabs-card-title-padding-base!important;
+    &.ant-tabs-tab-active {
+      padding: 0 @tabs-card-title-padding-base 1px !important;
+      font-weight: 400;
+    }
+  }
+
+  &-ink-bar {
+    background: transparent;
+    height: @tabs-ink-bar-height;
+    &::before {
+      content: " ";
+      left: 50%;
+      position: absolute;
+      width: @tabs-ink-bar-width !important;
+      height: @tabs-ink-bar-height;
+      background: @tabs-ink-bar-color;
+      transform: translate(-50%, 0);
+      border-radius: 2px;
+    }
+  }
+
+  &-vertical {
+    .ant-tabs-ink-bar {
+      width: @tabs-ink-bar-height!important;
+      &::before {
+        width: @tabs-ink-bar-height !important;
+        height: @tabs-ink-bar-width !important;
+        top: 54%;
+        transform: translate(0, -54%);
+      }
+    }
+    .ant-tabs-bar .ant-tabs-tab,
+    .ant-tabs-default-bar .ant-tabs-tab {
+      padding: 8px 24px !important;
+    }
+
+    .ant-tabs-small-bar .ant-tabs-tab {
+      padding: 6px 22px !important;
+    }
+
+    .ant-tabs-large-bar .ant-tabs-tab {
+      padding: 10px 26px !important;
+    }
+  }
+
+  &-left-bar &-ink-bar {
+    right: 3px !important;
+  }
+
+  &-right-bar &-ink-bar {
+    left: 0 !important;
+  }
+
+  &-card-bar {
+    .ant-tabs-nav .ant-tabs-tab,
+    .ant-tabs-nav .ant-tabs-tab-active {
+      font-size: 14px;
+    }
+    .ant-tabs-nav-wrap{
+      padding-left: 20px;
+    }
+  }
+}

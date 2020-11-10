@@ -1,0 +1,19 @@
+# {
+#  "name": "ikit",
+#  "version": "0.1.0",
+#  "description": "基于antd开发的ikang的ui框架",
+#  "main": "lib/ikit.umd.min.js",
+#  "keyword": "ikang ui base antd",
+#  "private": false
+#  }
+
+
+# 忽略目录
+examples/
+packages/
+public/
+ 
+# 忽略指定文件
+vue.config.js
+babel.config.js
+*.map

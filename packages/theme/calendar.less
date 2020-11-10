@@ -1,0 +1,28 @@
+.ant-fullcalendar{
+  &-cell&-selected-day {
+    .ant-fullcalendar-date{
+      background: fade(@orange-color, 7%) !important;
+    }
+  }
+  &-cell {
+    .ant-fullcalendar-date{
+      &:hover{
+        background: @grey-8;
+      }
+    }
+  }
+  &-month-panel{
+    &-selected-cell {
+      .ant-fullcalendar-month{
+        background: fade(@orange-color, 7%) !important;
+      }
+    }
+    &-cell{
+      .ant-fullcalendar-month {
+        &:hover{
+          background: @grey-8;
+        }
+      }
+    }
+  }
+}

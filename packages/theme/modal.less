@@ -1,0 +1,49 @@
+.ant-modal {
+  &-close{
+    opacity: 0;
+  }
+  &-title-center {
+    .ant-modal-header {
+      text-align: center;
+    }
+  }
+  &-header {
+    padding: 0 20px;
+    height: @modal-header-height;
+    .ant-modal-title {
+      line-height: @modal-header-height;
+      font-weight: 400;
+      span{
+        font-size: 12px;
+        margin-left: 8px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  &-body {
+    padding: 20px !important;
+    .ant-modal-close-x{
+      position: absolute;
+      right: 0;
+      top:1px;
+    }
+  }
+
+  &-footer {
+    padding: 0 20px 20px;
+    border-top: none;
+  }
+  &-close-x {
+    width: 48px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  button + button {
+    margin-left: 16px !important;
+  }
+}
+.ant-modal-confirm-body .ant-modal-confirm-content{
+  color: @grey-1;
+}

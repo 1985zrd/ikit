@@ -1,0 +1,70 @@
+<template>
+  <codeBox title="完全控制的上传列表"
+           description="使用 fileList 对列表进行完全控制，可以实现各种自定义功能，以下演示三种情况：
+                        1. 上传列表数量的限制。
+                        2. 读取远程路径并显示链接。
+                        3. 按照服务器返回信息筛选成功上传的文件。"
+           :code="fullyControlledUploadListCode">
+    <div>
+      <ik-upload
+        action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
+        :multiple="true"
+        :fileList="fileList"
+        @change="handleChange"
+      >
+        <ik-button> <ik-icon type="iconupload" isIk/> Upload </ik-button>
+      </ik-upload>
+      </div>
+  </codeBox>
+</template>
+<script>
+import { fullyControlledUploadListCode } from '../demoCode.js'
+export default {
+  name: 'fullyControlledUploadList',
+  data () {
+    return {
+      fullyControlledUploadListCode,
+      fileList: [
+        {
+          uid: '-1',
+          name: 'xxx.png',
+          status: 'done',
+          url: 'http://www.baidu.com/xxx.png'
+        }
+      ]
+    }
+  },
+  methods: {
+    handleChange (info) {
+      let fileList = [...info.fileList]
+
+      // 1. Limit the number of uploaded files
+      //    Only to show two recent uploaded files, and old ones will be replaced by the new
+      fileList = fileList.slice(-2)
+
+      // 2. read from response and show file link
+      fileList = fileList.map(file => {
+        if (file.response) {
+          // Component will show file.url as link
+          file.url = file.response.url
+        }
+        return file
+      })
+
+      this.fileList = fileList
+    }
+  }
+}
+</script>
+<style>
+  /* you can make up upload button and sample style by using stylesheets */
+  .ant-upload-select-picture-card i {
+    font-size: 32px;
+    color: #999;
+  }
+
+  .ant-upload-select-picture-card .ant-upload-text {
+    margin-top: 8px;
+    color: #666;
+  }
+</style>

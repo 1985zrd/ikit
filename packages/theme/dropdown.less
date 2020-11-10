@@ -1,0 +1,32 @@
+// .ant-dropdown-menu-item-selected {
+//   background: rgba(255, 104, 0, 0.07) !important;
+//   color: @orange-color !important;
+// }
+// .ant-dropdown-menu-item:hover{
+//   background: @grey-8;
+// }
+.ant-dropdown {
+  .ant-menu{
+    background: #fff;
+    box-shadow:0px 4px 10px 0px rgba(0, 0, 0,0.2);
+    &-item{
+      &:hover {
+        background: @grey-8;
+      }
+    }
+  }
+  .ant-menu-light.ant-menu-vertical .ant-menu-item-selected, 
+  .ant-menu-light.ant-menu-vertical .ant-menu-submenu-selected{
+    font-weight:400;
+    background: fade(@orange-color, 7%);
+    a{
+      color:@orange-color;
+    }
+    &:before{
+      width: 0;
+    }
+  }
+  .ant-menu.ant-menu-vertical:not(.ant-menu-sub) > li{
+    margin-bottom:0; 
+  }
+}

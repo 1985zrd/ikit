@@ -1,0 +1,24 @@
+@cardClass: ant-card;
+.@{cardClass} {
+  background: @grey-8;
+  &-loading-block {
+    background: linear-gradient(
+      90deg,
+      rgba(234, 237, 241, 0.2),
+      rgba(234, 237, 241, 0.4),
+      rgba(234, 237, 241, 0.2)
+    );
+  }
+  &-head .ant-tabs-bar {
+    border-bottom: none;
+  }
+  &-head .ant-tabs {
+    margin-bottom: -14px;
+  }
+}
+.ant-card {
+  line-height: 1.6;
+}
+.ant-card-head-title {
+  line-height: 1.5;
+}

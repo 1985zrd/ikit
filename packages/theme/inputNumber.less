@@ -1,0 +1,32 @@
+.ant-input-number {
+  &:hover {
+    border-color: @border-color-base;
+  }
+  &-focused,
+  &:focus {
+    box-shadow: none;
+    border-color: @primary-1!important;
+  }
+
+  &-focused &-handler-wrap {
+    border-left-color: @orange-color;
+    opacity: 1;
+  }
+  &-focused &-handler-down {
+    border-top-color: @orange-color;
+  }
+
+  &-disabled &-handler-wrap {
+    display: block;
+    background-color: @disabled-bg;
+  }
+  &-disabled {
+    border-color: @disable-border-color;
+    &:hover {
+      border-color: @disable-border-color;
+      .ant-input-number-handler-wrap {
+        opacity: 0;
+      }
+    }
+  }
+}

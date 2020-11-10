@@ -1,0 +1,23 @@
+.ant-time-picker{
+  &-input{
+    box-shadow: none !important;
+  }
+  &-panel-inner{
+    top: 46px;
+  }
+  &-panel-input-wrap{
+    display: none;
+  }
+  &-panel-select{
+    li&-option-selected{
+      background: fade(@orange-color, 7%) !important;
+      font-weight: 400;
+      color: @orange-color !important;
+    }
+    li{
+      &:hover{
+        background: @grey-8;
+      }
+    }
+  }
+}
